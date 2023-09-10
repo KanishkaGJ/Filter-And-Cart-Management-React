@@ -27,6 +27,14 @@ export const Navbar = ({user,totalProducts}) => {
                 </div>
             </div>
             <div className='rightside'>
+           
+                    <div><Link className='navlink' to="">All Items</Link></div>
+                    <div><Link className='navlink' to="">Magic Wardrobe</Link></div>
+                    <div><Link className='navlink' to="">ABOUT US</Link></div>
+                    <div><Link className='navlink' to="">CONTACT US</Link></div>
+
+            </div>
+            <div className='rightside'>
 
                 {!user&&<>
                     <div><Link className='navlink' to="signup">SIGN UP</Link></div>

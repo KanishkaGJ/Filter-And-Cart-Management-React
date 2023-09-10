@@ -61,7 +61,7 @@
 }
 
 .navbar .logo{
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
@@ -75,6 +75,15 @@
   font-weight: 600;
   font-size: 16px;
   margin-right: 24px;
+  align-items: center;
+}
+
+.navbar .leftside{
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: auto;
   align-items: center;
 }
 
