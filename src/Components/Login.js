@@ -23,7 +23,7 @@ export const Login = () => {
             setErrorMsg('');
             setTimeout(()=>{
                 setSuccessMsg('');
-                history.push('/');
+                history.push('/home');
             },3000)
         }).catch(error=>setErrorMsg(error.message));
     }

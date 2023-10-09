@@ -7,6 +7,7 @@ export const AddProducts = () => {
     const [description, setDescription]=useState('');
     const [price, setPrice]=useState('');
     const [category, setCategory]=useState('');
+    const [color, setColor]=useState('');
     const [image, setImage]=useState(null);
 
     const [imageError, setImageError]=useState('');
@@ -46,6 +47,7 @@ export const AddProducts = () => {
                     title,
                     description,
                     category,
+                    color,
                     price: Number(price),
                     url
                 }).then(()=>{
@@ -54,6 +56,7 @@ export const AddProducts = () => {
                     setDescription('');
                     setCategory('');
                     setPrice('');
+                    setColor('');
                     document.getElementById('file').value='';
                     setImageError('');
                     setUploadError('');
@@ -99,6 +102,23 @@ export const AddProducts = () => {
                     <option>Casual Wear Bottoms</option>
                     <option>Office Wear Bottoms</option>
                     <option>Party Wear</option>
+                </select>
+                <br></br>
+                <label>Prominent Color</label>
+                <select className='form-control' required
+                value={color} onChange={(e)=>setColor(e.target.value)}>                                    
+                    <option value="">Select Color</option>                   
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                    <option>Orange</option>
+                    <option>Pink</option>
+                    <option>Brown</option>
+
                 </select>
                 <br></br>
                 <label>Upload Product Image</label>
