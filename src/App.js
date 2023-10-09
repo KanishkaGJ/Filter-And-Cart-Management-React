@@ -11,9 +11,9 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component = {Home}/>
+        <Route exact path="/home" component = {Home}/>
         <Route path="/signup" component={Signup}/>
-        <Route path="/login" component={Login}/>
+        <Route path="/" component={Login}/>
         <Route path="/add-products" component={AddProducts}/>
         <Route path="/cart" component={Cart}/>       
         <Route component={NotFound}/>        
